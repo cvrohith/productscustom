@@ -35,7 +35,7 @@ export default function CarSeatCustomizer() {
      <div className="absolute inset-0 z-10">
             <Image
               src={`/images/base/exclusive-layers-min.jpg`}
-              alt={`Center padding ${centerPaddingColor}`}
+              alt={``}
               fill
               className="object-contain"
               priority

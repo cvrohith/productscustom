@@ -31,6 +31,16 @@ export default function CarSeatCustomizer() {
       {/* Image Preview */}
       <div className="relative h-[500px] bg-gray-50 rounded-lg flex items-center justify-center">
         <div className="relative w-[300px] h-[400px]">
+     {/* Base Image */}
+     <div className="absolute inset-0 z-10">
+            <Image
+              src={`/images/base/exclusive-layers-min.jpg`}
+              alt={`Center padding ${centerPaddingColor}`}
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
 
           {/* Center padding */}
           <div className="absolute inset-0 z-20">

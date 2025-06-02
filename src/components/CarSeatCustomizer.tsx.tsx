@@ -33,10 +33,12 @@ export default function CarSeatCustomizer() {
       {/* Image Preview */}
       <div className="relative h-[500px] bg-gray-50 rounded-lg flex items-center justify-center">
         <div className="relative w-[300px] h-[400px]">
+
+          
           {/* Base Image */}
           <div className="absolute inset-0 z-10">
             <Image
-              src={`/images/base/exclusive-layers-min.jpg`}
+              src={`/images/base/exclusive-layers-min.png`}
               alt={``}
               fill
                sizes="(max-width: 768px) 100vw, 300px"
@@ -106,7 +108,7 @@ export default function CarSeatCustomizer() {
             <TabsTrigger value="headrest">Headrest</TabsTrigger>
           </TabsList>
 
-          {/* Center Padding */}
+       
           <TabsContent value="center" className="space-y-4">
             <h2 className="text-lg font-medium">Select Center Padding Color</h2>
             <div className="flex gap-4">
@@ -124,7 +126,7 @@ export default function CarSeatCustomizer() {
               ))}
             </div>
           </TabsContent>
-          {/* Side Inlay */}
+         
           <TabsContent value="side" className="space-y-4">
             <h2 className="text-lg font-medium">Select Side Inlay Color</h2>
             <div className="flex gap-4">
@@ -142,7 +144,7 @@ export default function CarSeatCustomizer() {
             </div>
           </TabsContent>
 
-          {/* Armrest */}
+         
           <TabsContent value="armrest" className="space-y-4">
             <h2 className="text-lg font-medium">Select Armrest Color</h2>
             <div className="flex gap-4">
@@ -161,7 +163,7 @@ export default function CarSeatCustomizer() {
             </div>
           </TabsContent>
 
-          {/* Headrest */}
+      
           <TabsContent value="headrest" className="space-y-4">
             {headrestOption === "with-headrest" && (
               <>
@@ -185,7 +187,7 @@ export default function CarSeatCustomizer() {
           </TabsContent>
         </Tabs>
 
-        {/* Summary */}
+        {/* Summary with details*/}
         <div className="mt-8 pt-6 border-t">
           <h3 className="text-lg font-medium mb-4">Current Selection</h3>
           <ul className="space-y-2 text-sm">
